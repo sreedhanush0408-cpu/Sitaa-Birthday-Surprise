@@ -198,7 +198,7 @@ transform:scale(1);
     margin: 15px auto;
     display: block;
 }
-.bouq.bouquet{
+.bouquet{
     width: 260px;
     max-width: 80%;
     height: auto;
@@ -503,6 +503,7 @@ animation:fade .7s;
     margin: 30px auto;
 }
 #lastBtn{
+    display: none;
     padding:18px 35px;
     font-size:22px;
     border:none;
