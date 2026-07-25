@@ -209,15 +209,17 @@ function popBalloon(balloon){
     balloon.style.transform = "scale(1.5)";
     balloon.style.opacity = "0.3";
 
-    document.getElementById("balloonMessage").innerHTML = balloonMessages[random];
+    document.getElementById("balloonMessage").innerHTML =
+    balloonMessages[random];
 
     popped++;
 
     if(popped === 10){
-        setTimeout(() => {
-            alert("🎉 Yay! You popped all the balloons! ❤️");
-            // nextPage(7);   // We'll use this later if you add another page.
-        }, 800);
+
+        document.getElementById("balloonMessage").innerHTML =
+        "🎉 You popped every balloon! ❤️";
+
+        document.getElementById("lastBtn").style.display = "inline-block";
     }
 }
 function fireworks(){
@@ -270,4 +272,4 @@ I Likkeeeewwwww Youuuuuu chooooo fuckingggg muchhh Forever. ❤️`;
     type();
 }
 document.querySelector('button[onclick="nextPage(6)"]').style.display = "none";
-document.getElementById("lastBtn").style.display = "none";
+document.getElementById("lastBtn").style.display = "none";n").style.display = "none";
